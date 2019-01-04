@@ -207,6 +207,26 @@ public class RepositorioSrvTest {
     }
     
     /**
+     * Prueba para el método getRepositorios.
+     * Se prueba que se regresen todos los repositorio, actualmente hay 3.
+     * 
+     * @throws GitDataRepositorioExcepcion 
+     */
+    @Test
+    public void getRepositoriosTest() throws GitDataRepositorioExcepcion {
+        LOGGER.info("Entrando al método getRepositoriosTest.");
+        
+        RepositorioSrv repoSrv = new RepositorioSrv();
+        List<Repositorio> repositorios = repoSrv.getRepositorios();
+        
+        assertNotNull(repositorios);
+        assertEquals(repositorios.size(), 4);
+        assertFalse(repositorios.isEmpty());
+        
+        LOGGER.info("Método getRepositoriosTest finalizado.");
+    }
+    
+    /**
      * Pruaba para el método actualizarRepositorio.
      * Prueba que se actualice de forma exitosa un repositorio.
      * 
@@ -214,7 +234,7 @@ public class RepositorioSrvTest {
      * @throws GitDataConfigExcepcion 
      */
     @Test
-    public void actualizarRepositorioTest() throws GitDataRepositorioExcepcion, GitDataConfigExcepcion {
+    public void zactualizarRepositorioTest() throws GitDataRepositorioExcepcion, GitDataConfigExcepcion {
         LOGGER.info("Entrando al método actualizarRepositorioTest.");
         
         final RepositorioSrv servicio = new RepositorioSrv();
@@ -239,26 +259,6 @@ public class RepositorioSrvTest {
     }
     
     /**
-     * Prueba para el método getRepositorios.
-     * Se prueba que se regresen todos los repositorio, actualmente hay 3.
-     * 
-     * @throws GitDataRepositorioExcepcion 
-     */
-    @Test
-    public void getRepositoriosTest() throws GitDataRepositorioExcepcion {
-        LOGGER.info("Entrando al método getRepositoriosTest.");
-        
-        RepositorioSrv repoSrv = new RepositorioSrv();
-        List<Repositorio> repositorios = repoSrv.getRepositorios();
-        
-        assertNotNull(repositorios);
-        assertEquals(repositorios.size(), 3);
-        assertFalse(repositorios.isEmpty());
-        
-        LOGGER.info("Método getRepositoriosTest finalizado.");
-    }
-    
-    /**
      * Prueba para el método actualizarRepositorio con parámetro de una lista de repositorios.
      * Pruaba que se actualice de forma exitosa un repositorio que se agrega a una lista.
      * Se agregan dos repositorios y solo uno de ellos existen en Mongo.
@@ -269,8 +269,8 @@ public class RepositorioSrvTest {
      * @throws GitDataRepositorioExcepcion
      * @throws GitDataConfigExcepcion 
      */
-    /*@Test
-    public void actualizarListaRepositorioTest() throws GitDataRepositorioExcepcion, GitDataConfigExcepcion {
+    @Test
+    public void zzactualizarListaRepositorioTest() throws GitDataRepositorioExcepcion, GitDataConfigExcepcion {
         LOGGER.info("Entrando al método actualizarListaRepositorioTest.");
         
         final RepositorioSrv servicio = new RepositorioSrv();
@@ -310,5 +310,5 @@ public class RepositorioSrvTest {
         long resultado = servicio.actualizarRepositorio(repositorios);
         assertEquals(resultado, 1L);
         LOGGER.info("Método actualizarListaRepositorioTest finalizado.");
-    }*/
+    }
 }

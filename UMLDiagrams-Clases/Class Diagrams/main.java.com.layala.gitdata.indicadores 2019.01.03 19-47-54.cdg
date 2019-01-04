@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.layala.gitdata.indicadores">
+  <ClassDiagramComponents>
+    <Class name="Indicador91" package="com.layala.gitdata.indicadores" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIndicenciasNoResueltas" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Indicador92" package="com.layala.gitdata.indicadores" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTiempoRespuestaInicial" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Indicador93" package="com.layala.gitdata.indicadores" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTiempoResolucion" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

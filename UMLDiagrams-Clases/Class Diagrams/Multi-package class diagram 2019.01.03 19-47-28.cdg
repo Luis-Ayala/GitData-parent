@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-package class diagram">
+  <ClassDiagramComponents>
+    <Class name="App" package="com.layala.gitdata.aplicativos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Configuracion" package="com.layala.gitdata.configuraciones" visibility="public" isFinal="true" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getProperty" returnType="String" visibility="public" isStatic="true" isFinal="true">
+          <Argument type="String" name="llave"/>
+        </Method>
+        <Method name="crearConexion" returnType="MongoClient" visibility="public" isStatic="true" isFinal="true"/>
+      </Methods>
+    </Class>
+    <Class name="Comentario" package="com.layala.gitdata.entidades" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="creadoEn" type="Date" visibility="private"/>
+        <Field name="actualizadoEn" type="Date" visibility="private"/>
+        <Field name="cuerpo" type="String" visibility="private"/>
+        <Field name="cuerpoHtml" type="String" visibility="private"/>
+        <Field name="cuerpoTexto" type="String" visibility="private"/>
+        <Field name="comentarioId" type="long" visibility="private"/>
+        <Field name="url" type="String" visibility="private"/>
+        <Field name="usuario" type="Usuario" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCreadoEn" returnType="Date" visibility="public"/>
+        <Method name="setCreadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="creadoEn"/>
+        </Method>
+        <Method name="getActualizadoEn" returnType="Date" visibility="public"/>
+        <Method name="setActualizadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="actualizadoEn"/>
+        </Method>
+        <Method name="getCuerpo" returnType="String" visibility="public"/>
+        <Method name="setCuerpo" returnType="void" visibility="public">
+          <Argument type="String" name="cuerpo"/>
+        </Method>
+        <Method name="getCuerpoHtml" returnType="String" visibility="public"/>
+        <Method name="setCuerpoHtml" returnType="void" visibility="public">
+          <Argument type="String" name="cuerpoHtml"/>
+        </Method>
+        <Method name="getCuerpoTexto" returnType="String" visibility="public"/>
+        <Method name="setCuerpoTexto" returnType="void" visibility="public">
+          <Argument type="String" name="cuerpoTexto"/>
+        </Method>
+        <Method name="getComentarioId" returnType="long" visibility="public"/>
+        <Method name="setComentarioId" returnType="void" visibility="public">
+          <Argument type="long" name="comentarioId"/>
+        </Method>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+        <Method name="getUsuario" returnType="Usuario" visibility="public"/>
+        <Method name="setUsuario" returnType="void" visibility="public">
+          <Argument type="Usuario" name="usuario"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Etiqueta" package="com.layala.gitdata.entidades" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="url" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Hito" package="com.layala.gitdata.entidades" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="creadoEn" type="Date" visibility="private"/>
+        <Field name="incidenciasCerradas" type="int" visibility="private"/>
+        <Field name="incidenciasAbiertas" type="int" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="url" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCreadoEn" returnType="Date" visibility="public"/>
+        <Method name="setCreadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="creadoEn"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getEstado" returnType="String" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="String" name="estado"/>
+        </Method>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+        <Method name="getIncidenciasCerradas" returnType="int" visibility="public"/>
+        <Method name="setIncidenciasCerradas" returnType="void" visibility="public">
+          <Argument type="int" name="incidenciasCerradas"/>
+        </Method>
+        <Method name="getIncidenciasAbiertas" returnType="int" visibility="public"/>
+        <Method name="setIncidenciasAbiertas" returnType="void" visibility="public">
+          <Argument type="int" name="incidenciasAbiertas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Incidencia" package="com.layala.gitdata.entidades" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="incidenciaId" type="long" visibility="private"/>
+        <Field name="cerradaEn" type="Date" visibility="private"/>
+        <Field name="creadaEn" type="Date" visibility="private"/>
+        <Field name="modificadaEn" type="Date" visibility="private"/>
+        <Field name="numComentarios" type="int" visibility="private"/>
+        <Field name="etiquetas" type="List&lt;Etiqueta&gt;" visibility="private"/>
+        <Field name="hito" type="Hito" visibility="private"/>
+        <Field name="pullRequest" type="PullRequest" visibility="private"/>
+        <Field name="cuerpo" type="String" visibility="private"/>
+        <Field name="htmlUrl" type="String" visibility="private"/>
+        <Field name="url" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="asignadoA" type="Usuario" visibility="private"/>
+        <Field name="usuario" type="Usuario" visibility="private"/>
+        <Field name="repositorio" type="Repositorio" visibility="private"/>
+        <Field name="comentarios" type="List&lt;Comentario&gt;" visibility="private"/>
+        <Field name="indicador92" type="long" visibility="private"/>
+        <Field name="indicador93" type="long" visibility="private"/>
+        <Field name="numero" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIncidenciaId" returnType="long" visibility="public"/>
+        <Method name="setIncidenciaId" returnType="void" visibility="public">
+          <Argument type="long" name="incidenciaId"/>
+        </Method>
+        <Method name="getCerradaEn" returnType="Date" visibility="public"/>
+        <Method name="setCerradaEn" returnType="void" visibility="public">
+          <Argument type="Date" name="cerradaEn"/>
+        </Method>
+        <Method name="getCreadaEn" returnType="Date" visibility="public"/>
+        <Method name="setCreadaEn" returnType="void" visibility="public">
+          <Argument type="Date" name="creadaEn"/>
+        </Method>
+        <Method name="getModificadaEn" returnType="Date" visibility="public"/>
+        <Method name="setModificadaEn" returnType="void" visibility="public">
+          <Argument type="Date" name="modificadaEn"/>
+        </Method>
+        <Method name="getEtiquetas" returnType="List&lt;Etiqueta&gt;" visibility="public"/>
+        <Method name="setEtiquetas" returnType="void" visibility="public">
+          <Argument type="List&lt;Etiqueta&gt;" name="etiquetas"/>
+        </Method>
+        <Method name="getHito" returnType="Hito" visibility="public"/>
+        <Method name="setHito" returnType="void" visibility="public">
+          <Argument type="Hito" name="hito"/>
+        </Method>
+        <Method name="getPullRequest" returnType="PullRequest" visibility="public"/>
+        <Method name="setPullRequest" returnType="void" visibility="public">
+          <Argument type="PullRequest" name="pullRequest"/>
+        </Method>
+        <Method name="getCuerpo" returnType="String" visibility="public"/>
+        <Method name="setCuerpo" returnType="void" visibility="public">
+          <Argument type="String" name="cuerpo"/>
+        </Method>
+        <Method name="getHtmlUrl" returnType="String" visibility="public"/>
+        <Method name="setHtmlUrl" returnType="void" visibility="public">
+          <Argument type="String" name="htmlUrl"/>
+        </Method>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+        <Method name="getEstado" returnType="String" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="String" name="estado"/>
+        </Method>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getAsignadoA" returnType="Usuario" visibility="public"/>
+        <Method name="setAsignadoA" returnType="void" visibility="public">
+          <Argument type="Usuario" name="asignadoA"/>
+        </Method>
+        <Method name="getUsuario" returnType="Usuario" visibility="public"/>
+        <Method name="setUsuario" returnType="void" visibility="public">
+          <Argument type="Usuario" name="usuario"/>
+        </Method>
+        <Method name="getRepositorio" returnType="Repositorio" visibility="public"/>
+        <Method name="setRepositorio" returnType="void" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="getNumComentarios" returnType="int" visibility="public"/>
+        <Method name="setNumComentarios" returnType="void" visibility="public">
+          <Argument type="int" name="numComentarios"/>
+        </Method>
+        <Method name="getComentarios" returnType="List&lt;Comentario&gt;" visibility="public"/>
+        <Method name="setComentarios" returnType="void" visibility="public">
+          <Argument type="List&lt;Comentario&gt;" name="comentarios"/>
+        </Method>
+        <Method name="getIndicador92" returnType="long" visibility="public"/>
+        <Method name="setIndicador92" returnType="void" visibility="public">
+          <Argument type="long" name="indicador92"/>
+        </Method>
+        <Method name="getIndicador93" returnType="long" visibility="public"/>
+        <Method name="setIndicador93" returnType="void" visibility="public">
+          <Argument type="long" name="indicador93"/>
+        </Method>
+        <Method name="getNumero" returnType="long" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PullRequest" package="com.layala.gitdata.entidades" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="cerradoEn" type="Date" visibility="private"/>
+        <Field name="modificadoEn" type="Date" visibility="private"/>
+        <Field name="creadoEn" type="Date" visibility="private"/>
+        <Field name="pullRequestId" type="long" visibility="private"/>
+        <Field name="archivosModificados" type="int" visibility="private"/>
+        <Field name="comentarios" type="int" visibility="private"/>
+        <Field name="commits" type="int" visibility="private"/>
+        <Field name="eliminados" type="int" visibility="private"/>
+        <Field name="hito" type="Hito" visibility="private"/>
+        <Field name="cuerpo" type="String" visibility="private"/>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="titulo" type="String" visibility="private"/>
+        <Field name="htmlUrl" type="String" visibility="private"/>
+        <Field name="incidenciaUrl" type="String" visibility="private"/>
+        <Field name="url" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCerradoEn" returnType="Date" visibility="public"/>
+        <Method name="setCerradoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="cerradoEn"/>
+        </Method>
+        <Method name="getModificadoEn" returnType="Date" visibility="public"/>
+        <Method name="setModificadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="modificadoEn"/>
+        </Method>
+        <Method name="getCreadoEn" returnType="Date" visibility="public"/>
+        <Method name="setCreadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="creadoEn"/>
+        </Method>
+        <Method name="getPullRequestId" returnType="long" visibility="public"/>
+        <Method name="setPullRequestId" returnType="void" visibility="public">
+          <Argument type="long" name="pullRequestId"/>
+        </Method>
+        <Method name="getArchivosModificados" returnType="int" visibility="public"/>
+        <Method name="setArchivosModificados" returnType="void" visibility="public">
+          <Argument type="int" name="archivosModificados"/>
+        </Method>
+        <Method name="getComentarios" returnType="int" visibility="public"/>
+        <Method name="setComentarios" returnType="void" visibility="public">
+          <Argument type="int" name="comentarios"/>
+        </Method>
+        <Method name="getCommits" returnType="int" visibility="public"/>
+        <Method name="setCommits" returnType="void" visibility="public">
+          <Argument type="int" name="commits"/>
+        </Method>
+        <Method name="getEliminados" returnType="int" visibility="public"/>
+        <Method name="setEliminados" returnType="void" visibility="public">
+          <Argument type="int" name="eliminados"/>
+        </Method>
+        <Method name="getHito" returnType="Hito" visibility="public"/>
+        <Method name="setHito" returnType="void" visibility="public">
+          <Argument type="Hito" name="hito"/>
+        </Method>
+        <Method name="getCuerpo" returnType="String" visibility="public"/>
+        <Method name="setCuerpo" returnType="void" visibility="public">
+          <Argument type="String" name="cuerpo"/>
+        </Method>
+        <Method name="getEstado" returnType="String" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="String" name="estado"/>
+        </Method>
+        <Method name="getTitulo" returnType="String" visibility="public"/>
+        <Method name="setTitulo" returnType="void" visibility="public">
+          <Argument type="String" name="titulo"/>
+        </Method>
+        <Method name="getHtmlUrl" returnType="String" visibility="public"/>
+        <Method name="setHtmlUrl" returnType="void" visibility="public">
+          <Argument type="String" name="htmlUrl"/>
+        </Method>
+        <Method name="getIncidenciaUrl" returnType="String" visibility="public"/>
+        <Method name="setIncidenciaUrl" returnType="void" visibility="public">
+          <Argument type="String" name="incidenciaUrl"/>
+        </Method>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Repositorio" package="com.layala.gitdata.entidades" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="tieneIncidencias" type="boolean" visibility="private"/>
+        <Field name="creadoEn" type="Date" visibility="private"/>
+        <Field name="modificadoEn" type="Date" visibility="private"/>
+        <Field name="repositorioId" type="long" visibility="private"/>
+        <Field name="incidenciasAbiertas" type="int" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="homepage" type="String" visibility="private"/>
+        <Field name="lenguaje" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="url" type="String" visibility="private"/>
+        <Field name="gitUrl" type="String" visibility="private"/>
+        <Field name="htmlUrl" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="isTieneIncidencias" returnType="boolean" visibility="public"/>
+        <Method name="setTieneIncidencias" returnType="void" visibility="public">
+          <Argument type="boolean" name="tieneIncidencias"/>
+        </Method>
+        <Method name="getCreadoEn" returnType="Date" visibility="public"/>
+        <Method name="setCreadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="creadoEn"/>
+        </Method>
+        <Method name="getModificadoEn" returnType="Date" visibility="public"/>
+        <Method name="setModificadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="modificadoEn"/>
+        </Method>
+        <Method name="getRepositorioId" returnType="long" visibility="public"/>
+        <Method name="setRepositorioId" returnType="void" visibility="public">
+          <Argument type="long" name="repositorioId"/>
+        </Method>
+        <Method name="getIncidenciasAbiertas" returnType="int" visibility="public"/>
+        <Method name="setIncidenciasAbiertas" returnType="void" visibility="public">
+          <Argument type="int" name="incidenciasAbiertas"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getHomepage" returnType="String" visibility="public"/>
+        <Method name="setHomepage" returnType="void" visibility="public">
+          <Argument type="String" name="homepage"/>
+        </Method>
+        <Method name="getLenguaje" returnType="String" visibility="public"/>
+        <Method name="setLenguaje" returnType="void" visibility="public">
+          <Argument type="String" name="lenguaje"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+        <Method name="getGitUrl" returnType="String" visibility="public"/>
+        <Method name="setGitUrl" returnType="void" visibility="public">
+          <Argument type="String" name="gitUrl"/>
+        </Method>
+        <Method name="getHtmlUrl" returnType="String" visibility="public"/>
+        <Method name="setHtmlUrl" returnType="void" visibility="public">
+          <Argument type="String" name="htmlUrl"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Usuario" package="com.layala.gitdata.entidades" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="creadoEn" type="Date" visibility="private"/>
+        <Field name="usuarioId" type="int" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="htmlUrl" type="String" visibility="private"/>
+        <Field name="url" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCreadoEn" returnType="Date" visibility="public"/>
+        <Method name="setCreadoEn" returnType="void" visibility="public">
+          <Argument type="Date" name="creadoEn"/>
+        </Method>
+        <Method name="getUsuarioId" returnType="int" visibility="public"/>
+        <Method name="setUsuarioId" returnType="void" visibility="public">
+          <Argument type="int" name="usuarioId"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getHtmlUrl" returnType="String" visibility="public"/>
+        <Method name="setHtmlUrl" returnType="void" visibility="public">
+          <Argument type="String" name="htmlUrl"/>
+        </Method>
+        <Method name="getUrl" returnType="String" visibility="public"/>
+        <Method name="setUrl" returnType="void" visibility="public">
+          <Argument type="String" name="url"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GitDataConfigExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GitDataException" package="com.layala.gitdata.excepciones" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GitDataIncidenciaExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GitDataRepositorioExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Indicador91" package="com.layala.gitdata.indicadores" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIndicenciasNoResueltas" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Indicador92" package="com.layala.gitdata.indicadores" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTiempoRespuestaInicial" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Indicador93" package="com.layala.gitdata.indicadores" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTiempoResolucion" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IncidenciaSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="actualizarIncidencia" returnType="long" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+        <Method name="actualizarIncidencia" returnType="long" visibility="public">
+          <Argument type="Incidencia" name="incidencia"/>
+        </Method>
+        <Method name="insertarIncidencia" returnType="long" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+        <Method name="insertarIncidencia" returnType="long" visibility="public">
+          <Argument type="Incidencia" name="incidencia"/>
+        </Method>
+        <Method name="getIncidenciasPorRepositorio" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="getIncidenciasCerradasPorRepositorio" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="getHito" returnType="Hito" visibility="private">
+          <Argument type="Milestone" name="milestone"/>
+        </Method>
+        <Method name="getEtiqueteas" returnType="List&lt;Etiqueta&gt;" visibility="private">
+          <Argument type="List&lt;Label&gt;" name="labels"/>
+        </Method>
+        <Method name="getPullRequest" returnType="PullRequest" visibility="private">
+          <Argument type="org.eclipse.egit.github.core.PullRequest" name="pullRequest"/>
+        </Method>
+        <Method name="getUsuario" returnType="Usuario" visibility="private">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="getComentarios" returnType="List&lt;Comentario&gt;" visibility="private">
+          <Argument type="IssueService" name="issueSrv"/>
+          <Argument type="Repositorio" name="repositorio"/>
+          <Argument type="Issue" name="issue"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RepositorioSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="actualizarRepositorio" returnType="long" visibility="public">
+          <Argument type="List&lt;Repositorio&gt;" name="repositorios"/>
+        </Method>
+        <Method name="actualizarRepositorio" returnType="long" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="insertarRepositorio" returnType="long" visibility="public">
+          <Argument type="List&lt;Repositorio&gt;" name="repositorios"/>
+        </Method>
+        <Method name="insertarRepositorio" returnType="long" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="getRepositorios" returnType="List&lt;Repositorio&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com.layala.gitdata.indicadores.Indicador92" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="asignadoA" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.PullRequest" target="com.layala.gitdata.entidades.Hito" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hito" source="com.layala.gitdata.entidades.PullRequest" target="com.layala.gitdata.entidades.Hito" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="comentarios" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Comentario" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Comentario&gt;"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Comentario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Etiqueta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="repositorio" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Repositorio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataRepositorioExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.PullRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.RepositorioSrv" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pullRequest" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.PullRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Comentario" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.PullRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="usuario" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataConfigExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Hito" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hito" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Hito" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="usuario" source="com.layala.gitdata.entidades.Comentario" target="com.layala.gitdata.entidades.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Etiqueta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.indicadores.Indicador93" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.indicadores.Indicador91" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Hito" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="etiquetas" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Etiqueta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Etiqueta&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

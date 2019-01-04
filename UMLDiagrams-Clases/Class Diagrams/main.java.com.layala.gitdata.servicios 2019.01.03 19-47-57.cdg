@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.layala.gitdata.servicios">
+  <ClassDiagramComponents>
+    <Class name="IncidenciaSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="actualizarIncidencia" returnType="long" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+        <Method name="actualizarIncidencia" returnType="long" visibility="public">
+          <Argument type="Incidencia" name="incidencia"/>
+        </Method>
+        <Method name="insertarIncidencia" returnType="long" visibility="public">
+          <Argument type="List&lt;Incidencia&gt;" name="incidencias"/>
+        </Method>
+        <Method name="insertarIncidencia" returnType="long" visibility="public">
+          <Argument type="Incidencia" name="incidencia"/>
+        </Method>
+        <Method name="getIncidenciasPorRepositorio" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="getIncidenciasCerradasPorRepositorio" returnType="List&lt;Incidencia&gt;" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="getHito" returnType="Hito" visibility="private">
+          <Argument type="Milestone" name="milestone"/>
+        </Method>
+        <Method name="getEtiqueteas" returnType="List&lt;Etiqueta&gt;" visibility="private">
+          <Argument type="List&lt;Label&gt;" name="labels"/>
+        </Method>
+        <Method name="getPullRequest" returnType="PullRequest" visibility="private">
+          <Argument type="org.eclipse.egit.github.core.PullRequest" name="pullRequest"/>
+        </Method>
+        <Method name="getUsuario" returnType="Usuario" visibility="private">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="getComentarios" returnType="List&lt;Comentario&gt;" visibility="private">
+          <Argument type="IssueService" name="issueSrv"/>
+          <Argument type="Repositorio" name="repositorio"/>
+          <Argument type="Issue" name="issue"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RepositorioSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="actualizarRepositorio" returnType="long" visibility="public">
+          <Argument type="List&lt;Repositorio&gt;" name="repositorios"/>
+        </Method>
+        <Method name="actualizarRepositorio" returnType="long" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="insertarRepositorio" returnType="long" visibility="public">
+          <Argument type="List&lt;Repositorio&gt;" name="repositorios"/>
+        </Method>
+        <Method name="insertarRepositorio" returnType="long" visibility="public">
+          <Argument type="Repositorio" name="repositorio"/>
+        </Method>
+        <Method name="getRepositorios" returnType="List&lt;Repositorio&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

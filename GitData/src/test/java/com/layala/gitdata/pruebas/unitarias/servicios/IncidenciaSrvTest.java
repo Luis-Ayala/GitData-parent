@@ -15,6 +15,7 @@ import static junit.framework.Assert.assertEquals;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.eclipse.egit.github.core.service.IssueService;
+import static org.junit.Assert.*;
 import org.junit.FixMethodOrder;
 import org.junit.Rule;
 import org.junit.Test;
@@ -45,6 +46,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método actualizarIncidencia.
+     * Se prueba que el método lance la excepción cuando el parámetro es nulo.
      * 
      * @throws GitDataIncidenciaExcepcion
      * @throws GitDataConfigExcepcion 
@@ -63,6 +66,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método actualizarIncidencia.
+     * Se prueba que el método lance la excepción cuando el parámetro es nulo.
      * 
      * @throws GitDataIncidenciaExcepcion
      * @throws GitDataConfigExcepcion 
@@ -82,6 +87,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método insertarIncidencia.
+     * Se prueba que el método lance la excepción cuando el parámetro es nulo.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -100,6 +107,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método insertarIncidencia.
+     * Se prueba que el método lance la excepción cuando el parámetro es nulo.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -117,6 +126,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método insertarIncidencia.
+     * Prueba que se inserte una incidencia en Mongo.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -153,6 +164,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método insertarIncidencia.
+     * Prueba que se inserte una lista de incidencias en Mongo.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -216,6 +229,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método actualizarIncidencia.
+     * Prueba que se actualice una incidencia en Mongo.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -252,6 +267,8 @@ public class IncidenciaSrvTest {
     }
     
     /**
+     * Prueba para el método actualizarIncidencia.
+     * Prueba que se actualice una lista de incidencias en Mongo.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -313,27 +330,41 @@ public class IncidenciaSrvTest {
         LOGGER.info("Método actualizarListaIncidenciaTest finalizado.");
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    /**
+     * Prueba para el método getIncidenciasPorRepositorio.
+     * Prueba que se puedan recuperar las incidencias de un repositorio dado.
+     * 
+     * @throws GitDataIncidenciaExcepcion
+     */
     @Test
-    public void getIncidenciasPorRepositorioTest() {
+    public void getIncidenciasPorRepositorioTest() throws GitDataIncidenciaExcepcion {
+        LOGGER.info("Entrando al método getIncidenciasPorRepositorioTest.");
+        final IncidenciaSrv servicio = new IncidenciaSrv();
+        final Repositorio repositorio = new Repositorio();
+        repositorio.setNombre("GitData");
+        final List<Incidencia> incidencias = servicio.getIncidenciasPorRepositorio(repositorio);
+        
+        assertNotNull(incidencias);
+        assertEquals(incidencias.isEmpty(), false);
+        LOGGER.info("Método getIncidenciasPorRepositorioTest finalizado.");
     }
     
+    /**
+     * Prueba para el método getIncidenciasPorRepositorio.
+     * Prueba que se pueda recuperar las incidencias cerradas de una repositorio.
+     * 
+     * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
+     */
     @Test
-    public void getIncidenciasCerradasPorRepositorioTest() {
+    public void getIncidenciasCerradasPorRepositorioTest() throws GitDataIncidenciaExcepcion {
+        LOGGER.info("Entrando al método getIncidenciasCerradasPorRepositorioTest.");
+        final IncidenciaSrv servicio = new IncidenciaSrv();
+        final Repositorio repositorio = new Repositorio();
+        repositorio.setNombre("GitData");
+        final List<Incidencia> incidencias = servicio.getIncidenciasPorRepositorio(repositorio);
         
+        assertNotNull(incidencias);
+        assertEquals(incidencias.isEmpty(), false);
+        LOGGER.info("Método getIncidenciasCerradasPorRepositorioTest finalizado.");
     }
 }

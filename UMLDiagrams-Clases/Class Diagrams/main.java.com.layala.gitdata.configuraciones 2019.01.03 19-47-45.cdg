@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.layala.gitdata.configuraciones">
+  <ClassDiagramComponents>
+    <Class name="Configuracion" package="com.layala.gitdata.configuraciones" visibility="public" isFinal="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getProperty" returnType="String" visibility="public" isStatic="true" isFinal="true">
+          <Argument type="String" name="llave"/>
+        </Method>
+        <Method name="crearConexion" returnType="MongoClient" visibility="public" isStatic="true" isFinal="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

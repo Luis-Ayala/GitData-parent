@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.layala.gitdata.excepciones">
+  <ClassDiagramComponents>
+    <Class name="GitDataConfigExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GitDataException" package="com.layala.gitdata.excepciones" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GitDataIncidenciaExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="GitDataRepositorioExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Throwable" name="causa"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataConfigExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataRepositorioExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
