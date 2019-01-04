@@ -23,13 +23,7 @@
                 <version>${jersey.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            
-            <dependency>
-                <groupId>com.layala.gitdata</groupId>
-                <artifactId>GitData</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
+            </dependency>            
         </dependencies>
     </dependencyManagement>
 
@@ -55,6 +49,18 @@
             <version>4.9</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>GitData</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+        
     </dependencies>
 
     <build>
@@ -65,8 +71,8 @@
                 <version>2.5.1</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -81,7 +87,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.layala.gitdata.gitdata.ws.Main</mainClass>
+                    <mainClass>com.layala.gitdata.ws.GitData</mainClass>
                 </configuration>
             </plugin>
         </plugins>

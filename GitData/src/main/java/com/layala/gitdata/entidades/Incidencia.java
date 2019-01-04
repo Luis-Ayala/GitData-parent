@@ -2,6 +2,7 @@ package com.layala.gitdata.entidades;
 
 import java.util.Date;
 import java.util.List;
+import javax.xml.bind.annotation.XmlRootElement;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -13,6 +14,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * @version 1.0
  * @since 1.0
  */
+@XmlRootElement
 public class Incidencia {
 
     private long incidenciaId;
@@ -35,7 +37,11 @@ public class Incidencia {
     private long indicador92;
     private long indicador93;
     private int numero;
-
+    
+    public Incidencia(){
+        
+    }
+    
     public long getIncidenciaId() {
         return incidenciaId;
     }

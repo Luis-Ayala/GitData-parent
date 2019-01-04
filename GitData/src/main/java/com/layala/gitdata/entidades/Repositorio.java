@@ -1,6 +1,7 @@
 package com.layala.gitdata.entidades;
 
 import java.util.Date;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Clase que representa un objeto Repository de la API v3 de GitHub
@@ -9,6 +10,7 @@ import java.util.Date;
  * @version 1.0
  * @since 1.0
  */
+@XmlRootElement
 public class Repositorio {
     private boolean tieneIncidencias;
     private Date creadoEn;
@@ -22,6 +24,10 @@ public class Repositorio {
     private String url;
     private String gitUrl;
     private String htmlUrl;
+    
+    public Repositorio() {
+        
+    }
 
     public boolean isTieneIncidencias() {
         return tieneIncidencias;

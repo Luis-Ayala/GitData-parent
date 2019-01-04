@@ -2,7 +2,7 @@
 
 <ClassDiagram name="test.java.com.layala.gitdata.pruebas.unitarias.indicadores">
   <ClassDiagramComponents>
-    <Class name="Indicador91Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="Indicador91Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="6.0" yPosition="6.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="excepcion" type="ExpectedException" visibility="public"/>
@@ -17,7 +17,7 @@
         <Method name="getIndicenciasNoResueltasResultadoEncontradoTest" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Indicador92Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="452.0" yPosition="20.0">
+    <Class name="Indicador92Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="6.0" yPosition="236.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="excepcion" type="ExpectedException" visibility="public"/>
@@ -32,7 +32,7 @@
         <Method name="getTiempoPrimerComentarioResultadoEncontradoTest" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Indicador93Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="890.0" yPosition="20.0">
+    <Class name="Indicador93Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="6.0" yPosition="469.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="excepcion" type="ExpectedException" visibility="public"/>

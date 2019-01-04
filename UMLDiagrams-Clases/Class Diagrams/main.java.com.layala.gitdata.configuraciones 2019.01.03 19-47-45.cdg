@@ -2,7 +2,7 @@
 
 <ClassDiagram name="main.java.com.layala.gitdata.configuraciones">
   <ClassDiagramComponents>
-    <Class name="Configuracion" package="com.layala.gitdata.configuraciones" visibility="public" isFinal="true" xPosition="41.0" yPosition="31.0">
+    <Class name="Configuracion" package="com.layala.gitdata.configuraciones" visibility="public" isFinal="true" xPosition="5.0" yPosition="6.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>

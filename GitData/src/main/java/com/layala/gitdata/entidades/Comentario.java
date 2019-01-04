@@ -1,6 +1,7 @@
 package com.layala.gitdata.entidades;
 
 import java.util.Date;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Clase que representa un objeto Comment de la API v3 de GitHub
@@ -9,6 +10,7 @@ import java.util.Date;
  * @version 1.0
  * @since 1.0
  */
+@XmlRootElement
 public class Comentario {
     private Date creadoEn;
     private Date actualizadoEn;
@@ -18,6 +20,10 @@ public class Comentario {
     private long comentarioId;
     private String url;
     private Usuario usuario;
+    
+    public Comentario() {
+        
+    }
 
     public Date getCreadoEn() {
         return creadoEn;

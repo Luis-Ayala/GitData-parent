@@ -1,6 +1,7 @@
 package com.layala.gitdata.entidades;
 
 import java.util.Date;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Clase que representa un objeto User de la API v3 de GitHub
@@ -9,6 +10,7 @@ import java.util.Date;
  * @version 1.0
  * @since 1.0
  */
+@XmlRootElement
 public class Usuario {
     private Date creadoEn;
     private int usuarioId;
@@ -16,6 +18,10 @@ public class Usuario {
     private String nombre;
     private String htmlUrl;
     private String url;
+    
+    public Usuario() {
+        
+    }
 
     public Date getCreadoEn() {
         return creadoEn;

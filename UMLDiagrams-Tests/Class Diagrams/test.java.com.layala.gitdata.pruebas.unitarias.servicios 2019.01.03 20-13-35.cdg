@@ -2,7 +2,7 @@
 
 <ClassDiagram name="test.java.com.layala.gitdata.pruebas.unitarias.servicios">
   <ClassDiagramComponents>
-    <Class name="IncidenciaSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="IncidenciaSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="7.0" yPosition="7.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="excepcion" type="ExpectedException" visibility="public"/>
@@ -23,7 +23,7 @@
         <Method name="getIncidenciasCerradasPorRepositorioTest" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="RepositorioSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="375.0" yPosition="20.0">
+    <Class name="RepositorioSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="7.0" yPosition="349.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
         <Field name="excepcion" type="ExpectedException" visibility="public"/>

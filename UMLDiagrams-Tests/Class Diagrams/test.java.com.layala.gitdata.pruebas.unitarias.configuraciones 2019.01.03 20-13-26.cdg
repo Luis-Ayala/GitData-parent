@@ -2,7 +2,7 @@
 
 <ClassDiagram name="test.java.com.layala.gitdata.pruebas.unitarias.configuraciones">
   <ClassDiagramComponents>
-    <Class name="ConfiguracionTest" package="com.layala.gitdata.pruebas.unitarias.configuraciones" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="ConfiguracionTest" package="com.layala.gitdata.pruebas.unitarias.configuraciones" visibility="public" xPosition="5.0" yPosition="4.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>

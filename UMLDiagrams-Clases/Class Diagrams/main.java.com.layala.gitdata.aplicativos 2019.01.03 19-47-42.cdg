@@ -2,7 +2,7 @@
 
 <ClassDiagram name="main.java.com.layala.gitdata.aplicativos">
   <ClassDiagramComponents>
-    <Class name="App" package="com.layala.gitdata.aplicativos" visibility="public" xPosition="53.0" yPosition="24.0">
+    <Class name="App" package="com.layala.gitdata.aplicativos" visibility="public" xPosition="14.0" yPosition="9.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>

@@ -1,6 +1,7 @@
 package com.layala.gitdata.entidades;
 
 import java.util.Date;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Clase que representa un objeto PullRequest de la API v3 de GitHub
@@ -9,6 +10,7 @@ import java.util.Date;
  * @version 1.0
  * @since 1.0
  */
+@XmlRootElement
 public class PullRequest {
     private Date cerradoEn;
     private Date modificadoEn;
@@ -25,6 +27,10 @@ public class PullRequest {
     private String htmlUrl;
     private String incidenciaUrl;
     private String url;
+    
+    public PullRequest() {
+        
+    }
 
     public Date getCerradoEn() {
         return cerradoEn;

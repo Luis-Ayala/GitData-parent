@@ -1,6 +1,7 @@
 package com.layala.gitdata.entidades;
 
 import java.util.Date;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Clase que representa un objeto Milestone de la API v3 de GitHub
@@ -9,6 +10,7 @@ import java.util.Date;
  * @version 1.0
  * @since 1.0
  */
+@XmlRootElement
 public class Hito {
     private Date creadoEn;
     private int incidenciasCerradas;
@@ -17,6 +19,10 @@ public class Hito {
     private String estado;
     private String titulo;
     private String url;
+    
+    public Hito() {
+        
+    }
 
     public Date getCreadoEn() {
         return creadoEn;
