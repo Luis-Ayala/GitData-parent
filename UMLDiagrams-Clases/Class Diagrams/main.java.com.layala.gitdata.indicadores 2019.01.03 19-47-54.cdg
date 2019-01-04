@@ -13,7 +13,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Indicador92" package="com.layala.gitdata.indicadores" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Indicador92" package="com.layala.gitdata.indicadores" visibility="public" xPosition="20.0" yPosition="169.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -24,7 +24,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Indicador93" package="com.layala.gitdata.indicadores" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Indicador93" package="com.layala.gitdata.indicadores" visibility="public" xPosition="20.0" yPosition="321.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>

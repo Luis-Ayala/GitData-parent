@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Multi-package class diagram">
   <ClassDiagramComponents>
-    <Class name="App" package="com.layala.gitdata.aplicativos" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="App" package="com.layala.gitdata.aplicativos" visibility="public" xPosition="219.0" yPosition="121.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -13,7 +13,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Configuracion" package="com.layala.gitdata.configuraciones" visibility="public" isFinal="true" xPosition="320.0" yPosition="20.0">
+    <Class name="Configuracion" package="com.layala.gitdata.configuraciones" visibility="public" isFinal="true" xPosition="856.0" yPosition="121.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -25,7 +25,7 @@
         <Method name="crearConexion" returnType="MongoClient" visibility="public" isStatic="true" isFinal="true"/>
       </Methods>
     </Class>
-    <Class name="Comentario" package="com.layala.gitdata.entidades" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Comentario" package="com.layala.gitdata.entidades" visibility="public" xPosition="45.0" yPosition="1751.0">
       <Fields>
         <Field name="creadoEn" type="Date" visibility="private"/>
         <Field name="actualizadoEn" type="Date" visibility="private"/>
@@ -72,7 +72,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Etiqueta" package="com.layala.gitdata.entidades" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="Etiqueta" package="com.layala.gitdata.entidades" visibility="public" xPosition="1448.0" yPosition="1262.0">
       <Fields>
         <Field name="nombre" type="String" visibility="private"/>
         <Field name="url" type="String" visibility="private"/>
@@ -89,7 +89,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Hito" package="com.layala.gitdata.entidades" visibility="public" xPosition="1220.0" yPosition="20.0">
+    <Class name="Hito" package="com.layala.gitdata.entidades" visibility="public" xPosition="1259.0" yPosition="412.0">
       <Fields>
         <Field name="creadoEn" type="Date" visibility="private"/>
         <Field name="incidenciasCerradas" type="int" visibility="private"/>
@@ -131,7 +131,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Incidencia" package="com.layala.gitdata.entidades" visibility="public" xPosition="1520.0" yPosition="20.0">
+    <Class name="Incidencia" package="com.layala.gitdata.entidades" visibility="public" xPosition="1259.0" yPosition="1774.0">
       <Fields>
         <Field name="incidenciaId" type="long" visibility="private"/>
         <Field name="cerradaEn" type="Date" visibility="private"/>
@@ -243,7 +243,7 @@
         <Method name="hashCode" returnType="int" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="PullRequest" package="com.layala.gitdata.entidades" visibility="public" xPosition="1820.0" yPosition="20.0">
+    <Class name="PullRequest" package="com.layala.gitdata.entidades" visibility="public" xPosition="2505.0" yPosition="364.0">
       <Fields>
         <Field name="cerradoEn" type="Date" visibility="private"/>
         <Field name="modificadoEn" type="Date" visibility="private"/>
@@ -325,7 +325,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Repositorio" package="com.layala.gitdata.entidades" visibility="public" xPosition="2120.0" yPosition="20.0">
+    <Class name="Repositorio" package="com.layala.gitdata.entidades" visibility="public" xPosition="2368.0" yPosition="2315.0">
       <Fields>
         <Field name="tieneIncidencias" type="boolean" visibility="private"/>
         <Field name="creadoEn" type="Date" visibility="private"/>
@@ -392,7 +392,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Usuario" package="com.layala.gitdata.entidades" visibility="public" xPosition="20.0" yPosition="420.0">
+    <Class name="Usuario" package="com.layala.gitdata.entidades" visibility="public" xPosition="685.0" yPosition="1393.0">
       <Fields>
         <Field name="creadoEn" type="Date" visibility="private"/>
         <Field name="usuarioId" type="int" visibility="private"/>
@@ -429,7 +429,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="GitDataConfigExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="320.0" yPosition="420.0">
+    <Class name="GitDataConfigExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="46.0" yPosition="676.0">
       <Fields/>
       <Constructors>
         <Constructor visibility="public">
@@ -445,7 +445,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="GitDataException" package="com.layala.gitdata.excepciones" visibility="public" xPosition="620.0" yPosition="420.0">
+    <Class name="GitDataException" package="com.layala.gitdata.excepciones" visibility="public" xPosition="467.0" yPosition="302.0">
       <Fields/>
       <Constructors>
         <Constructor visibility="public">
@@ -461,7 +461,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="GitDataIncidenciaExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="920.0" yPosition="420.0">
+    <Class name="GitDataIncidenciaExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="437.0" yPosition="676.0">
       <Fields/>
       <Constructors>
         <Constructor visibility="public">
@@ -477,7 +477,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="GitDataRepositorioExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="1220.0" yPosition="420.0">
+    <Class name="GitDataRepositorioExcepcion" package="com.layala.gitdata.excepciones" visibility="public" xPosition="856.0" yPosition="676.0">
       <Fields/>
       <Constructors>
         <Constructor visibility="public">
@@ -493,7 +493,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="Indicador91" package="com.layala.gitdata.indicadores" visibility="public" xPosition="1520.0" yPosition="420.0">
+    <Class name="Indicador91" package="com.layala.gitdata.indicadores" visibility="public" xPosition="1759.0" yPosition="773.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -504,7 +504,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Indicador92" package="com.layala.gitdata.indicadores" visibility="public" xPosition="1820.0" yPosition="420.0">
+    <Class name="Indicador92" package="com.layala.gitdata.indicadores" visibility="public" xPosition="1700.0" yPosition="2396.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -515,7 +515,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Indicador93" package="com.layala.gitdata.indicadores" visibility="public" xPosition="2120.0" yPosition="420.0">
+    <Class name="Indicador93" package="com.layala.gitdata.indicadores" visibility="public" xPosition="1632.0" yPosition="2933.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -526,7 +526,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="IncidenciaSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="20.0" yPosition="820.0">
+    <Class name="IncidenciaSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="2015.0" yPosition="1720.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -569,7 +569,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="RepositorioSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="320.0" yPosition="820.0">
+    <Class name="RepositorioSrv" package="com.layala.gitdata.servicios" visibility="public" xPosition="2684.0" yPosition="1720.0">
       <Fields>
         <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
       </Fields>
@@ -592,35 +592,35 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation source="com.layala.gitdata.indicadores.Indicador92" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Comentario" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="asignadoA" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="repositorio" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Repositorio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Comentario" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="com.layala.gitdata.entidades.PullRequest" target="com.layala.gitdata.entidades.Hito" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="hito" source="com.layala.gitdata.entidades.PullRequest" target="com.layala.gitdata.entidades.Hito" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="comentarios" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Comentario" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Comentario&gt;"/>
-    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Comentario" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
-    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Etiqueta" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="repositorio" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Repositorio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataRepositorioExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
-    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.PullRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.servicios.RepositorioSrv" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="pullRequest" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.PullRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.entidades.Comentario" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.PullRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="usuario" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataConfigExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
-    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Hito" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="hito" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Hito" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hito" source="com.layala.gitdata.entidades.PullRequest" target="com.layala.gitdata.entidades.Hito" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="usuario" source="com.layala.gitdata.entidades.Comentario" target="com.layala.gitdata.entidades.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Etiqueta" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.indicadores.Indicador93" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="com.layala.gitdata.indicadores.Indicador91" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Hito" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataRepositorioExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
     <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Hito" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Etiqueta" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="etiquetas" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Etiqueta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Etiqueta&gt;"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Etiqueta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.indicadores.Indicador93" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+    <UseRelation source="com.layala.gitdata.servicios.RepositorioSrv" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.indicadores.Indicador91" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.layala.gitdata.excepciones.GitDataConfigExcepcion" target="com.layala.gitdata.excepciones.GitDataException"/>
+    <HasRelation name="usuario" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.indicadores.Indicador92" target="com.layala.gitdata.entidades.Incidencia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pullRequest" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.PullRequest" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Repositorio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.servicios.IncidenciaSrv" target="com.layala.gitdata.entidades.PullRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.PullRequest" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hito" source="com.layala.gitdata.entidades.Incidencia" target="com.layala.gitdata.entidades.Hito" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

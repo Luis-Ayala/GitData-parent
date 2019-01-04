@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-package class diagram">
+  <ClassDiagramComponents>
+    <Class name="ConfiguracionTest" package="com.layala.gitdata.pruebas.unitarias.configuraciones" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="testGetProperty" returnType="void" visibility="public"/>
+        <Method name="testCrearConexion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Indicador91Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="20.0" yPosition="252.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="excepcion" type="ExpectedException" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIndicenciasNoResueltasExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="getIndicenciasNoResueltasResultadoVacioTest" returnType="void" visibility="public"/>
+        <Method name="getIndicenciasNoResueltasResultadoNoEncontradoTest" returnType="void" visibility="public"/>
+        <Method name="getIndicenciasNoResueltasResultadoEncontradoTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Indicador92Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="424.0" yPosition="252.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="excepcion" type="ExpectedException" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getTiempoPrimerComentarioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="getTiempoPrimerComentarioResultadoVacioTest" returnType="void" visibility="public"/>
+        <Method name="getTiempoPrimerComentarioResultadoNoEncontradoTest" returnType="void" visibility="public"/>
+        <Method name="getTiempoPrimerComentarioResultadoEncontradoTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Indicador93Test" package="com.layala.gitdata.pruebas.unitarias.indicadores" visibility="public" xPosition="829.0" yPosition="252.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="excepcion" type="ExpectedException" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getTiempoResolucionExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="getTiempoResolucionResultadoVacioTest" returnType="void" visibility="public"/>
+        <Method name="getTiempoResolucionResultadoNoEncontradoTest" returnType="void" visibility="public"/>
+        <Method name="getTiempoResolucionResultadoEncontradoTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="IncidenciaSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="285.0" yPosition="532.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="excepcion" type="ExpectedException" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actualizarIncidenciaExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="actualizarListaIncidenciaExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarIncidenciaExcepciontest" returnType="void" visibility="public"/>
+        <Method name="insertarListaIncidenciaExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="insertarListaIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="zactualizarIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="zzactualizarListaIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="getIncidenciasPorRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="getIncidenciasCerradasPorRepositorioTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RepositorioSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="695.0" yPosition="532.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="excepcion" type="ExpectedException" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actualizarRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="actualizarListaRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarListaRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="insertarListaRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="getRepositoriosTest" returnType="void" visibility="public"/>
+        <Method name="zactualizarRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="zzactualizarListaRepositorioTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

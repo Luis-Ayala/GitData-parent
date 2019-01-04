@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="test.java.com.layala.gitdata.pruebas.unitarias.configuraciones">
+  <ClassDiagramComponents>
+    <Class name="ConfiguracionTest" package="com.layala.gitdata.pruebas.unitarias.configuraciones" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="testGetProperty" returnType="void" visibility="public"/>
+        <Method name="testCrearConexion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

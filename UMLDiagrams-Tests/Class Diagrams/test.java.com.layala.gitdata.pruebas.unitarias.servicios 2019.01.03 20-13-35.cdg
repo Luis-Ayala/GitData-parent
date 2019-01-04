@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="test.java.com.layala.gitdata.pruebas.unitarias.servicios">
+  <ClassDiagramComponents>
+    <Class name="IncidenciaSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="excepcion" type="ExpectedException" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actualizarIncidenciaExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="actualizarListaIncidenciaExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarIncidenciaExcepciontest" returnType="void" visibility="public"/>
+        <Method name="insertarListaIncidenciaExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="insertarListaIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="zactualizarIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="zzactualizarListaIncidenciaTest" returnType="void" visibility="public"/>
+        <Method name="getIncidenciasPorRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="getIncidenciasCerradasPorRepositorioTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RepositorioSrvTest" package="com.layala.gitdata.pruebas.unitarias.servicios" visibility="public" xPosition="375.0" yPosition="20.0">
+      <Fields>
+        <Field name="LOGGER" type="Logger" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="excepcion" type="ExpectedException" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actualizarRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="actualizarListaRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarListaRepositorioExcepcionTest" returnType="void" visibility="public"/>
+        <Method name="insertarRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="insertarListaRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="getRepositoriosTest" returnType="void" visibility="public"/>
+        <Method name="zactualizarRepositorioTest" returnType="void" visibility="public"/>
+        <Method name="zzactualizarListaRepositorioTest" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
