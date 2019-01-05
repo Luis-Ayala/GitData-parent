@@ -10,7 +10,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Clase de configuraciones
+ * Clase que contiene diversos métodos para obtener las configuraciones del 
+ * sistema.
  * 
  * @author Luis Ayala
  * @version 1.0
@@ -22,6 +23,7 @@ public final class Configuracion {
     
     /**
      * Obtiene el valor de una propiedad dada del archivo config.properties
+     * 
      * @param llave Llave de la propiedad a buscar
      * @return El valor de la propiedad
      * @throws com.layala.gitdata.excepciones.GitDataConfigExcepcion
@@ -48,7 +50,8 @@ public final class Configuracion {
     }
     
     /**
-     * Crea la conexion a la base de datos
+     * Crea la conexión a la base de datos, todos los datos necesarios son
+     * recuperados del archivo config.properties
      * 
      * @return MongoClient
      * @throws com.layala.gitdata.excepciones.GitDataConfigExcepcion

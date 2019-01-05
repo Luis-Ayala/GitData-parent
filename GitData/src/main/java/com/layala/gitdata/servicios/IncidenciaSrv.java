@@ -56,7 +56,7 @@ public class IncidenciaSrv {
      * La búsqueda de la incidencia en la base de datos se hace por medio del campo
      * <code>incidenciaId</code>
      * 
-     * @param incidencias Lista de incidencias a actualizar
+     * @param incidencias Lista de incidencias por actualizar
      * @return Número de incidencias actualizadas
      * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
      */
@@ -128,7 +128,7 @@ public class IncidenciaSrv {
     /**
      * Inserta las incidencias que se le pasan al método en el parámetro <code>incidencias</code> 
      * 
-     * @param incidencias Lista de incidencias a insertar en mongo
+     * @param incidencias Lista de incidencias a insertar en la base de datos
      * @return Número de incidencias insertadas
      * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
      */
@@ -161,8 +161,8 @@ public class IncidenciaSrv {
     /**
      * Inserta la incidencia que se le pasa al método en el parámetro <code>incidencia</code> 
      *
-     * @param incidencia incidencia a insertar
-     * @return regresa el número de incidencias insertadas
+     * @param incidencia Incidencia a insertar
+     * @return Número de incidencias insertadas
      * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
      */
     public long insertarIncidencia(final Incidencia incidencia) throws GitDataIncidenciaExcepcion {
@@ -190,7 +190,7 @@ public class IncidenciaSrv {
     }
 
     /**
-     * Regresa las incidencias del repositorio que se le pasa como parámetro <code>repositorio</code>
+     * Regresa las incidencias del repositorio que se le pasa en el parámetro <code>repositorio</code>
      *
      * @param repositorio Repositorio para buscar las incidencias
      * @return Lista de incidencias por repositorio
@@ -238,10 +238,10 @@ public class IncidenciaSrv {
     }
     
     /**
-     * Regresa las incidencias cerradas del repositorio que se le pasa como parámetro <code>repositorio</code>
+     * Regresa las incidencias cerradas del repositorio que se le pasa en el parámetro <code>repositorio</code>
      *
      * @param repositorio Repositorio para buscar las incidencias
-     * @return Lista de incidencias por repositorio
+     * @return Lista de incidencias cerradas por repositorio
      * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
      */
     public List<Incidencia> getIncidenciasCerradasPorRepositorio(final Repositorio repositorio) throws GitDataIncidenciaExcepcion {
@@ -384,7 +384,7 @@ public class IncidenciaSrv {
     }
 
     /**
-     * Regresa la lista de comentarios de la incidencias
+     * Regresa la lista de comentarios de la incidencia
      *
      * @param repositorio Repositorio a la cual pertenece la incidencia
      * @param issue Incidencia de la cual se quiere saber los comentarios

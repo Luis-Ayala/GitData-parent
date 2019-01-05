@@ -12,6 +12,8 @@ import static org.junit.Assert.*;
  * Pruebas unitarias para los métodos de la clase Configuracion
  * 
  * @author Luis Ayala
+ * @version 1.0
+ * @since 1.0
  */
 public class ConfiguracionTest {
     private static final Logger LOGGER = LogManager.getLogger(ConfiguracionTest.class);
@@ -20,7 +22,7 @@ public class ConfiguracionTest {
     }
     
     /**
-     * Prueba para el método getProperty, de la clase Configuracion.
+     * Prueba para el método getProperty de la clase Configuracion.
      * 
      * @author Luis Ayala
      * @version 1.0

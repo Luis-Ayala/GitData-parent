@@ -30,7 +30,7 @@ public class GitData {
     }
 
     /**
-     * Inicio de la aplicación inicializar el servidor Grizzly HTTP.
+     * Inicio de la aplicación inicializa el servidor Grizzly HTTP.
      * 
      * @param args
      * @throws IOException 

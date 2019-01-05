@@ -78,8 +78,7 @@ public class RepositorioSrv {
 
     /**
      * Actualiza el repositorio que se pasa al método en el parámetro <code>repositorio</code> 
-     * Este método reemplaza el repositorio por completo por uno nuevo, si no se
-     * localiza el repositorio este es creado.
+     * Este método reemplaza el repositorio por completo por uno nuevo.
      * <p>
      * La búsqueda del repositorio en la base de datos se hace por medio del campo
      * <code>repositorioId</code>

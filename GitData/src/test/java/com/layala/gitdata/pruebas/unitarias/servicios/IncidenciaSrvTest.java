@@ -27,9 +27,10 @@ import org.junit.runners.MethodSorters;
  * 
  * Se pueban los método de inserción y de actualización, tanto para los métodos
  * que reciben como parámetro una lista como los métodos que reciben solo una
- * incidencia, primero se ejecutan los métodos para que lancen una excepción, 
- * luego se ejecutan los métodos de inserción para que los de 
- * actualización puedan buscar las incidencias insertadas.
+ * incidencia.
+ * <p>
+ * Las pruebas se ejecutan en orden alfabético mediante la anotación
+ * @FixMethodOrder para que no causen conflicto la ejcución de las pruebas unitarias.
  * 
  * @author Luis Ayala
  * @version 1.0
@@ -127,7 +128,7 @@ public class IncidenciaSrvTest {
     
     /**
      * Prueba para el método insertarIncidencia.
-     * Prueba que se inserte una incidencia en Mongo.
+     * Prueba que se inserte una incidencia en la base de datos.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -165,7 +166,7 @@ public class IncidenciaSrvTest {
     
     /**
      * Prueba para el método insertarIncidencia.
-     * Prueba que se inserte una lista de incidencias en Mongo.
+     * Prueba que se inserte una lista de incidencias en la base de datos.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -230,7 +231,7 @@ public class IncidenciaSrvTest {
     
     /**
      * Prueba para el método actualizarIncidencia.
-     * Prueba que se actualice una incidencia en Mongo.
+     * Prueba que se actualice una incidencia en la base de datos.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -268,7 +269,7 @@ public class IncidenciaSrvTest {
     
     /**
      * Prueba para el método actualizarIncidencia.
-     * Prueba que se actualice una lista de incidencias en Mongo.
+     * Prueba que se actualice una lista de incidencias en la base de datos.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -332,7 +333,7 @@ public class IncidenciaSrvTest {
     
     /**
      * Prueba para el método getIncidenciasPorRepositorio.
-     * Prueba que se puedan recuperar las incidencias de un repositorio dado.
+     * Prueba que se puedan recuperar las incidencias de un repositorio.
      * 
      * @throws GitDataIncidenciaExcepcion
      */

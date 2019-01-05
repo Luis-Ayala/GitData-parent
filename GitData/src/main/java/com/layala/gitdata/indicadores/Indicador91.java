@@ -10,9 +10,9 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.egit.github.core.service.IssueService;
 
 /**
- * Retorna una lista de las incidencias no resueltas, 
+ * Retorna una lista de incidencias no resueltas, 
  * las incidencias no resueltas son todas aquellas que no tienen el estado
- * de close.
+ * de "closed".
  * 
  * @author Luis Ayala
  * @version 1.0
@@ -23,11 +23,10 @@ public class Indicador91 {
     private static final Logger LOGGER = LogManager.getLogger(Indicador91.class);
 
     /**
-     * Regresa las incidencias que tienen el estado como cerradas "closed"
+     * Regresa las incidencias que tienen el estado "closed"
      * 
-     * @param incidencias Lista de inciencias de las cuales se quiere saber las
-     *        que tienen el estado de cerradas.
-     * @return Lista de incidencias cerradas.
+     * @param incidencias Lista de inciencias a filtrar
+     * @return Lista de incidencias cerradas "closed"
      * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
      */
     public List<Incidencia> getIndicenciasNoResueltas(final List<Incidencia> incidencias) throws GitDataIncidenciaExcepcion{

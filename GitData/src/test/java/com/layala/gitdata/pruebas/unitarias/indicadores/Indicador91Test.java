@@ -39,8 +39,8 @@ public class Indicador91Test {
 
 
     /**
-     * Prueba para el método getIndicenciasNoResueltas, de la clase Indicador91.
-     * Esta prueba verifica que se lance la excepcion cuando se le pasa null al
+     * Prueba para el método getIndicenciasNoResueltas de la clase Indicador91.
+     * Esta prueba verifica que se lance la excepción cuando se le pasa null al
      * parámetro del método.
      * 
      * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
@@ -60,7 +60,7 @@ public class Indicador91Test {
     }
     
     /**
-     * Prueba para el método getIndicenciasNoResueltas, de la clase Indicador91. 
+     * Prueba para el método getIndicenciasNoResueltas de la clase Indicador91. 
      * Esta prueba verifica que el resultado sea una lista vacia cuando el paramétro que recibe
      * sea una lista vacia.
      * 
@@ -80,9 +80,9 @@ public class Indicador91Test {
     }
     
     /**
-     * Prueba para el método getIndicenciasNoResueltas, de la clase Indicador91. 
+     * Prueba para el método getIndicenciasNoResueltas de la clase Indicador91. 
      * Esta prueba verifica que el resultado sea una lista vacia cuando el parámetro que recibe
-     * sea una lista de incidencias que no tienen el estado de closed.
+     * sea una lista de incidencias.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
@@ -104,7 +104,7 @@ public class Indicador91Test {
     }
     
     /**
-     * Prueba para el método getIndicenciasNoResueltas, de la clase Indicador91. 
+     * Prueba para el método getIndicenciasNoResueltas de la clase Indicador91. 
      * Esta prueba verifica que el resultado sea una lista NO vacia cuando el parámetro que recibe
      * sea una lista de incidencias que al menos una de ellas tenga el estado de closed.
      * 

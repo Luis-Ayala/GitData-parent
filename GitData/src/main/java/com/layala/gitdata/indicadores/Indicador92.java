@@ -14,7 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Retorna una lista de las incidencias en donde cada incidencia tiene el tiempo
+ * Retorna una lista de incidencias en donde cada incidencia tiene el tiempo
  * transcurrido entre la fecha en que se creó la incidencia y el primer comentario
  * de la incidencia.
  * 
@@ -30,12 +30,12 @@ public class Indicador92 {
     private static final Logger LOGGER = LogManager.getLogger(Indicador92.class);
     
     /**
-     * Regresa las incidencias con el tiempo de respuesta inicial
+     * Regresa las incidencias con el tiempo de respuesta inicial.
      * El tiempo se expresa en horas.
      * 
      * @param incidencias Lista de incidencias 
      * @return Lista de incidencias con el tiempo de respuesta inicial
-     * @throws GitDataIncidenciaExcepcion 
+     * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
      */
     public List<Incidencia> getTiempoRespuestaInicial(final List<Incidencia> incidencias) throws GitDataIncidenciaExcepcion {
         LOGGER.info("Entrando al método getTiempoRespuestaInicial.");

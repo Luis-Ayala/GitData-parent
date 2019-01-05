@@ -62,7 +62,7 @@ public class Indicador93Test {
     }
     
     /**
-     * Prueba para el método getTiempoResolucion, de la clase Indicador93. 
+     * Prueba para el método getTiempoResolucion de la clase Indicador93. 
      * Esta prueba verifica que el resultado sea una lista vacia cuando el paramétro que recibe
      * sea una lista vacia.
      * 
@@ -82,8 +82,8 @@ public class Indicador93Test {
     }
     
     /**
-     * Prueba para el método getTiempoResolucion, de la clase Indicador93. 
-     * Esta prueba verifica que el resultado sea una lista indética vacia, cuando
+     * Prueba para el método getTiempoResolucion de la clase Indicador93. 
+     * Esta prueba verifica que el resultado sea una lista vacia, cuando
      * se le pasa una lista de incidencias y ninguna de ellas tenga el estado de closed.
      * 
      * @throws GitDataIncidenciaExcepcion 
@@ -114,11 +114,10 @@ public class Indicador93Test {
     }
     
     /**
-     * Prueba para el método getTiempoResolucion, de la clase Indicador93. 
+     * Prueba para el método getTiempoResolucion de la clase Indicador93. 
      * Esta prueba verifica que la lista de resultado no sea una lista vacia, 
      * que la incidencia que contiene el estado de closed tenga en el campo indicador93
-     * el valor de 720 horas y que el tamaño de la lista sea una, ya que solo una 
-     * incidencia esta en estado de closed.
+     * el valor de 720 horas y que el tamaño de la lista sea uno.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */

@@ -17,13 +17,14 @@ import org.junit.rules.ExpectedException;
 import org.junit.runners.MethodSorters;
 
 /**
- * Prueba unitaria para la clase de servicio RepositorioSrv.
+ * Pruebas unitarias para la clase de servicio RepositorioSrv.
  * 
  * Se pueban los método de inserción y de actualización, tanto para los métodos
- * que reciben como parámetro una lista como los métodos que reciben solo un 
- * repositorio, primero se ejecutan los métodos para que lancen una excepción, 
- * luego se ejecutan los métodos de inserción para que los de 
- * actualización puedan buscar los repositorios insertados.
+ * que reciben por parámetro una lista como los métodos que reciben solo un 
+ * repositorio.
+ * <p>
+ * Las pruebas se ejecutan en orden alfabético mediante la anotación
+ * @FixMethodOrder para que no causen conflicto la ejcución de las pruebas unitarias.
  * 
  * @author Luis Ayala
  * @version 1.0
@@ -61,7 +62,7 @@ public class RepositorioSrvTest {
     }
     
     /**
-     * Prueba para el método actualizarRepositorio con parámetro de una lista.
+     * Prueba para el método actualizarRepositorio cuando el parámetro es una lista.
      * Se prueba que el método lance la excepción cuando el parámetro es nulo.
      * 
      * @throws GitDataRepositorioExcepcion
@@ -103,7 +104,7 @@ public class RepositorioSrvTest {
     }
     
     /**
-     * Prueba para el método insertarRepositorio con parámetro de una lista.
+     * Prueba para el método insertarRepositorio cuando el parámetro es una lista.
      * Se prueba que el método lance la excepción cuando el parámetro es nulo.
      * 
      * @throws GitDataRepositorioExcepcion
@@ -156,10 +157,8 @@ public class RepositorioSrvTest {
     }
     
     /**
-     * Prueba para el método insertarRepositorio con parámetro de una lista de repositorios.
-     * Prueba que se realice de forma exitosa la inserción de varios repositorios
-     * que se agregan a una lista.
-     * 
+     * Prueba para el método insertarRepositorio cuando el parámetro es una lista de repositorios.
+     * Prueba que se realice de forma exitosa la inserción de varios repositorios. 
      * @throws GitDataRepositorioExcepcion
      * @throws GitDataConfigExcepcion 
      */
@@ -208,7 +207,7 @@ public class RepositorioSrvTest {
     
     /**
      * Prueba para el método getRepositorios.
-     * Se prueba que se regresen todos los repositorio, actualmente hay 3.
+     * Se prueba que se regresen todos los repositorio.
      * 
      * @throws GitDataRepositorioExcepcion 
      */
@@ -259,13 +258,10 @@ public class RepositorioSrvTest {
     }
     
     /**
-     * Prueba para el método actualizarRepositorio con parámetro de una lista de repositorios.
-     * Pruaba que se actualice de forma exitosa un repositorio que se agrega a una lista.
+     * Prueba para el método actualizarRepositorio cuando el parámetro es una lista de repositorios.
+     * Pruaba que se actualice de forma exitosa los repositorios de la lista.
      * Se agregan dos repositorios y solo uno de ellos existen en Mongo.
      * <p>
-     * 
-     * Ejecutar de forma independiente
-     * 
      * @throws GitDataRepositorioExcepcion
      * @throws GitDataConfigExcepcion 
      */

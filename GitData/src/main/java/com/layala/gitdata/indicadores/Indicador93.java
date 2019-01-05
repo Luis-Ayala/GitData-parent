@@ -12,8 +12,8 @@ import org.apache.logging.log4j.Logger;
 import org.eclipse.egit.github.core.service.IssueService;
 
 /**
- * Retorna una lista de las incidencias en donde cada incidencia tiene el tiempo
- * en que se tomó en resolverla. En este indicador solo se toman en cuenta las
+ * Retorna una lista de incidencias en donde cada incidencia tiene el tiempo
+ * que se tomó en resolverla. En este indicador solo se toman en cuenta las
  * incidencias cerradas, es decir, las incidencias que tienen el estado de
  * "closed"
  *
@@ -34,9 +34,9 @@ public class Indicador93 {
      * El tiempo se expresa en horas.
      * 
      * @param incidencias Lista de incidencias 
-     * @return Lista de incidencias con el tiempo entre la creación y la fecha de
-     *         cierre de la incidencia.
-     * @throws GitDataIncidenciaExcepcion 
+     * @return Lista de incidencias con el tiempo transcurrido entre la creación y la fecha de
+     * cierre de la incidencia.
+     * @throws com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion
      */
     public List<Incidencia> getTiempoResolucion(final List<Incidencia> incidencias) throws GitDataIncidenciaExcepcion {
         LOGGER.info("Entrando al método getTiempoResolucion.");

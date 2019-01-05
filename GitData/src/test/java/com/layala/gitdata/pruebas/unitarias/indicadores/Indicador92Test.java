@@ -43,8 +43,8 @@ public class Indicador92Test {
     public ExpectedException excepcion = ExpectedException.none();
     
     /**
-     * Prueba para el método getTiempoRespuestaInicial, de la clase Indicador92.
-     * Esta prueba verifica que se lance la excepcion cuando se le pasa null al
+     * Prueba para el método getTiempoRespuestaInicial de la clase Indicador92.
+     * Esta prueba verifica que se lance la excepción cuando se le pasa null al
      * parámetro del método.
      * 
      * @throws GitDataIncidenciaExcepcion 
@@ -64,7 +64,7 @@ public class Indicador92Test {
     }
     
     /**
-     * Prueba para el método getTiempoRespuestaInicial, de la clase Indicador92. 
+     * Prueba para el método getTiempoRespuestaInicial de la clase Indicador92. 
      * Esta prueba verifica que el resultado sea una lista vacia cuando el paramétro que recibe
      * sea una lista vacia.
      * 
@@ -84,7 +84,7 @@ public class Indicador92Test {
     }
     
     /**
-     * Prueba para el método getTiempoRespuestaInicial, de la clase Indicador92. 
+     * Prueba para el método getTiempoRespuestaInicial de la clase Indicador92. 
      * Esta prueba verifica que el resultado sea una lista indética a la lista
      * que se le pasa como parámetro y que en la lista de resultado tenga el 
      * campo indicador92 en cero.
@@ -125,7 +125,7 @@ public class Indicador92Test {
      * Esta prueba verifica que la lista de resultado no sea una lista vacia, 
      * que sea del mismo tamaño que la lista que se pasa como parámetro y que
      * la incidencia que contiene el comentario tenga en el campo indicador92
-     * el valor de 25 horas-
+     * el valor de 25 horas.
      * 
      * @throws GitDataIncidenciaExcepcion 
      */
