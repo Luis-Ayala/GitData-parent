@@ -5,6 +5,7 @@ import com.layala.gitdata.entidades.Incidencia;
 import com.layala.gitdata.entidades.Repositorio;
 import com.layala.gitdata.excepciones.GitDataIncidenciaExcepcion;
 import com.layala.gitdata.excepciones.GitDataRepositorioExcepcion;
+import com.layala.gitdata.indicadores.Indicador92;
 import com.layala.gitdata.servicios.IncidenciaSrv;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -19,24 +20,25 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
 /**
- *
+ * Clase que maneja el servicio <code>/indicador92/{repositorio}</code>
+ * 
  * @author Luis Ayala
  * @version 1.0
  * @since 1.0
  */
-@Path("/indicador91/{repositorio}")
-public class Indicador91 {
+@Path("/indicador92/{repositorio}")
+public class Indicador92Service {
 
     /**
      * Método que gestiona una petición GET. El objeto de retorno es un objeto 
-     * tipo Json Array que contiene las incidencias cerradas del repositorio.
+     * tipo Json Array que contiene las incidencias con el tiempo de respuesta incial.
      *
      * @param repositorio
-     * @return Json Array con las incidencias cerradas
+     * @return Json Array de incidencias con el tiempo de respuesta inicial.
      */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getIndicador91(@PathParam("repositorio") String repositorio) {
+    public Response getIndicador92(@PathParam("repositorio") String repositorio) {
         final RepositorioSrv servicio = new RepositorioSrv();
         final IncidenciaSrv incidenciaSrv = new IncidenciaSrv();
         List<Incidencia> indicador = new ArrayList<>();
@@ -47,14 +49,14 @@ public class Indicador91 {
                     .stream()
                     .filter(r -> r.getNombre().equals(repositorio))
                     .findAny()
-                    .orElseThrow(() -> new GitDataRepositorioExcepcion("Repositorio no encontrado"));
+                    .orElseThrow(() -> new GitDataRepositorioExcepcion("Repositorio no encontrado."));
 
             final List<Incidencia> incidencias1 = incidenciaSrv.getIncidenciasCerradasPorRepositorio(encontrado);
             final List<Incidencia> incidencias2 = incidenciaSrv.getIncidenciasPorRepositorio(encontrado);
             
             incidencias1.addAll(incidencias2);
-            com.layala.gitdata.indicadores.Indicador91 indicador91 = new com.layala.gitdata.indicadores.Indicador91();
-            indicador = indicador91.getIndicenciasNoResueltas(incidencias1);
+            Indicador92 indicador92 = new Indicador92();
+            indicador = indicador92.getTiempoRespuestaInicial(incidencias1);
         } catch (GitDataRepositorioExcepcion | GitDataIncidenciaExcepcion e) {
             throw new WebApplicationException(Response.status(Status.BAD_REQUEST)
                     .entity(e.getMessage())
