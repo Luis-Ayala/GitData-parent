@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Multi-package class diagram">
   <ClassDiagramComponents>
-    <Class name="Indicador91Service" package="com.layala.gitdata.resources" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="Indicador91Service" package="com.layala.gitdata.resources" visibility="public" xPosition="7.0" yPosition="7.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -11,7 +11,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Indicador92Service" package="com.layala.gitdata.resources" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Indicador92Service" package="com.layala.gitdata.resources" visibility="public" xPosition="7.0" yPosition="123.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -20,7 +20,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Indicador93Service" package="com.layala.gitdata.resources" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Indicador93Service" package="com.layala.gitdata.resources" visibility="public" xPosition="7.0" yPosition="239.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -29,7 +29,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="GitData" package="com.layala.gitdata.ws" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="GitData" package="com.layala.gitdata.ws" visibility="public" xPosition="7.0" yPosition="354.0">
       <Fields>
         <Field name="BASE_URI" type="String" visibility="public" isStatic="true" isFinal="true"/>
       </Fields>

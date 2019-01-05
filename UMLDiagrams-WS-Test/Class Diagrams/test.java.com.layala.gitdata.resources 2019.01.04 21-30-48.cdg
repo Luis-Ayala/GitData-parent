@@ -2,7 +2,7 @@
 
 <ClassDiagram name="test.java.com.layala.gitdata.resources">
   <ClassDiagramComponents>
-    <Class name="Indicador91ServiceTest" package="com.layala.gitdata.resources" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="Indicador91ServiceTest" package="com.layala.gitdata.resources" visibility="public" xPosition="7.0" yPosition="7.0">
       <Fields>
         <Field name="servidor" type="HttpServer" visibility="private"/>
         <Field name="uri" type="WebTarget" visibility="private"/>
@@ -16,7 +16,7 @@
         <Method name="testGetIndicador91" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Indicador92ServiceTest" package="com.layala.gitdata.resources" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Indicador92ServiceTest" package="com.layala.gitdata.resources" visibility="public" xPosition="7.0" yPosition="217.0">
       <Fields>
         <Field name="servidor" type="HttpServer" visibility="private"/>
         <Field name="uri" type="WebTarget" visibility="private"/>
@@ -30,7 +30,7 @@
         <Method name="testGetIndicador92" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Indicador93ServiceTest" package="com.layala.gitdata.resources" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Indicador93ServiceTest" package="com.layala.gitdata.resources" visibility="public" xPosition="7.0" yPosition="425.0">
       <Fields>
         <Field name="servidor" type="HttpServer" visibility="private"/>
         <Field name="uri" type="WebTarget" visibility="private"/>
