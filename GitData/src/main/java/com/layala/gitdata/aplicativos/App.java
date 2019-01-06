@@ -41,7 +41,9 @@ public class App {
             repositorios.forEach(r -> {
                 try {
                     List<Incidencia> incidencias = incidenciaSrv.getIncidenciasPorRepositorio(r);
+                    List<Incidencia> cerradas = incidenciaSrv.getIncidenciasCerradasPorRepositorio(r);
                     total.addAll(incidencias);
+                    total.addAll(cerradas);
                 } catch (GitDataIncidenciaExcepcion ex) {
                 }
                 
